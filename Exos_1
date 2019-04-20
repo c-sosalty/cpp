@@ -1,0 +1,38 @@
+#include <iostream> 
+
+   
+struct Field {
+
+  float perimeter {}; 
+  float surface   {};
+  float lenght    {};
+  float width     {};
+ 
+
+};
+   
+
+
+int main () {
+
+   
+  Field  my_field {};
+
+   
+  std::cout << "Longuer : "       ;
+  std::cin  >>  my_field.lenght   ;          
+  std::cout << "Largeur : "       ;
+  std::cin  >>  my_field.width    ;
+
+
+  my_field.surface   =         my_field.lenght * my_field.width    ;
+  my_field.perimeter =  2 *  ( my_field.lenght + my_field.width )  ;
+
+
+  std::cout << "La surface du champs est de  "    << my_field.surface   ;
+  std::cout << std::endl                                                ;
+  std::cout << "Le perimetre du champs est de "   << my_field.perimeter ;
+  std::cout << std::endl                                                ; 
+
+
+}
